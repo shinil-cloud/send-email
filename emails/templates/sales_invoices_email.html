@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Invoices</title>
+</head>
+<body>
+    <h2>Sales Invoices for Item: {{ item_name }}</h2>
+    <ul>
+        {% for invoice in invoices %}
+            <li>Invoice Id ={{ invoice.invoice_name }}</li>
+            <li>Invoice date ={{ invoice.posting_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
